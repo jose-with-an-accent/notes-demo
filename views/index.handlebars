@@ -1,0 +1,10 @@
+<form method="get" action="/note">
+    <input type="text" name="content" />
+    <input type="submit" value="Add Note" />
+</form>
+<h1>All Notes</h1>
+{{#each notes}}
+{{#dataValues}}
+<p>{{this.content}}</p>
+{{/dataValues}}
+{{/each}}
